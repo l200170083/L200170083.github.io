@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Selamat Datang</title>
+	</head>
+<body background = "gambar.jpg">
+<h1><font  color="blue"><marquee>Sistem Managemen Basisdata</marquee></font></h1>
+<h2><font color="red"><p align="center">1. DDL (Data Definition Language)</p></font><h2>
+<h3>DDL merupakan perintah SQL yang berhubungan dengan pendefinisian suatu struktur database yang digunakan untuk membuat, mengubah dan menghapus struktur dan definisi metadata dari objek-objek database.</br>
+Beberapa perintah dasar yang termasuk DDL ini antara lain :</br>
+<font color="green">a. CREATE</font></br>
+Perintah ini digunakan untuk membuat, termasuk diantaranya membuat database baru, tabel baru, view   baru, dan kolom.</br>
+<font color="green">b. ALTER</font></br>
+Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. Pekerjaannya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom.</br>
+<font color="green">c. RENAME</font></br>
+Perintah yang digunakan untuk merubah nama Objek</br>
+<font color="green">d. DROP</font></br>
+Perintah ini digunakan untuk menghapus database dan tabel.<h3></br>
+
+<h2><font color="red"><p align="center">2.  DML (Data Manipulation Language)</p></font></h2>
+<h3>DML merupakan perintah SQL yang digunakan untuk proses pengolahan isi data di dalam table seperti memasukkan, merubah dan menghapus isi data - dan tidak terkait dengan perubahan struktur dan definisi tipe data dari objek database.</br>
+Perintah SQL yang termasuk dalam DML antara lain :</br>
+<font color="green">a.UPDATE</font></br>
+Perintah ini digunakan untuk memperbaharui data lama menjadi data terkini. Jika anda memiliki data yang salah atau kurang Up To Date dengan kondisi sekarang, maka dapat diubah isi datanya dengan menggunakan perintah UPDATE.</br>
+<font color="green">b.INSERT</font></br>
+perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. Penggunaannya setelah database dan tabel selesai dibuat.</br>
+<font color="green">c.SELECT</font></br>
+Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.</br>
+<font color="green">d.DELETE</font></br>
+Perintah ini digunakan untuk menghapus data dari tabel. Biasanya data yang dihapus adalah data yang tidak diperlukan lagi. Pada saat menghapus data, perintah yang telah dijalankan tidak dapat digagalkan, sehingga data yang telah hilang tidak dapat dikembalikan lagi.</br>
+
+<h2><font color="red"><p align="center">3.Full Text Searching </p></b>
+
+          Full Text Searching merupakan proses pencarian data pada database Mysql.</font></h2></h3></br>
+
+          <font color="green">A. Cara Mengaktifkan fasilitas fulltext-search antara lain : </font><br/>
+
+          1.CREATE TABLE post (
+            id int(4) NOT NULL AUTO_INCREMENT, <br/>
+            title varchar(255) NOT NULL, <br/>
+            post_content text, <br/>
+            PRIMARY KEY (id), <br/>
+            FULLTEXT KEY post_content (post_content) ); <br/>
+            
+          <font color="green">B. Modifikasi tabel yang sudah ada dengan perintah ALTER TABLE</font>.<br/>
+
+          1.ALTER TABLE products <br/>
+          2.ADD FULLTEXT(productDescription,productline) <br/>
+           menambahkan fasilitas fulltext serach pada table products untuk kolom productsDescription,productLine. <br/>
+  
+          <font color="green">C. Membuat index dengan perintah "Create Fulltext index ..." </font><br/>
+        
+          1.CREATE FULLTEXT INDEX address <br/>
+          2. ON offices(addressLine1, addressLine2) <br/>
+
+
+      </p>
+
+</body> 
+</html>
